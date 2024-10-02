@@ -2,14 +2,19 @@
 #include <stdlib.h>
 #include <locale.h>
 
-int n, L;
-n = 2;
-L = 133;
-
 
 int main()
 {
+	float n, L;
+	int k, m, n1, L1;
+	n = 2;
+	L = 733;
+	k = 3;
+	m = 7;
+	n1 = (int)n;
+	L1 = (int)L;
+
 	setlocale(LC_ALL, "RUS");
-	printf("Дано: \n %11i\n %11i\n\t________\n", n,L);
-	printf("Ответ:\n\t %+08.4f", n / L);
+	printf("Р”Р°РЅРѕ: \n\t %*i\n\t %*i\n\t_____________\n",k+1,n1,k+1,L1);
+	printf("РћС‚РІРµС‚:\n\t %+0*.*f",k+m+2,m, n / L);
 }
